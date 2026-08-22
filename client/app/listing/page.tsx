@@ -40,6 +40,12 @@ interface Listing {
   province: string;
   image_url: string;
   status: string;
+  isHazardous?: boolean;
+  sustainability_impact?: {
+    co2_saved_kg: number;
+    water_saved_liters: number;
+    trees_equivalent: number;
+  };
 }
 
 type ViewMode = "table" | "card";

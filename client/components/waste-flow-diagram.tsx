@@ -281,7 +281,8 @@ export default function WasteFlowDiagram() {
   useEffect(() => {
     onNodesChange(
       nodesWithHighlight.map((n) => ({
-        type: "reset" as const,
+        id: n.id,
+        type: "replace" as const,
         item: n,
       }))
     );

@@ -35,6 +35,7 @@ interface Listing {
   image_url: string;
   status: string;
   createdAt: string;
+  isHazardous?: boolean;
 }
 
 declare global {

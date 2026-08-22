@@ -109,19 +109,6 @@ export default function RagpickerNetworkPage() {
           </div>
         </section>
       </main>
-
-      <style jsx global>{`
-        .custom-scrollbar::-webkit-scrollbar {
-          width: 4px;
-        }
-        .custom-scrollbar::-webkit-scrollbar-track {
-          background: transparent;
-        }
-        .custom-scrollbar::-webkit-scrollbar-thumb {
-          background-color: #e5e7eb;
-          border-radius: 20px;
-        }
-      `}</style>
     </div>
   );
 }

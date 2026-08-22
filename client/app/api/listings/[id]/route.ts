@@ -6,7 +6,7 @@ const backendBaseUrl = process.env.BACKEND_URL || "http://127.0.0.1:5001";
 
 export async function GET(
   request: Request,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
     const { id } = await params;

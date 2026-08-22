@@ -186,25 +186,7 @@ export default function RagpickerMap() {
         ))}
       </MapContainer>
       
-      {/* Custom CSS for Leaflet popups to make them look modern */}
-      <style jsx global>{`
-        .leaflet-popup-content-wrapper {
-          border-radius: 12px;
-          box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-          border: 1px solid #f3f4f6;
-          padding: 4px;
-        }
-        .leaflet-popup-content {
-          margin: 8px 12px;
-          line-height: 1.4;
-        }
-        .leaflet-popup-tip {
-          box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
-        }
-        .leaflet-container {
-          font-family: inherit;
-        }
-      `}</style>
+      {/* Custom CSS for Leaflet popups moved to globals.css */}
     </div>
   );
 }
