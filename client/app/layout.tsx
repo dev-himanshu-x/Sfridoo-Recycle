@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Open_Sans, Poppins } from "next/font/google";
+import { Analytics } from '@vercel/analytics/next';
 
 const poppins = Poppins({
   weight: ["400", "500", "600", "700"],
@@ -31,6 +32,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         <Providers>{children}</Providers>
+        <Analytics />
       </body>
     </html>
   );
